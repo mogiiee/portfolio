@@ -2,9 +2,9 @@ import type { FontPreset } from "@/lib/fonts";
 
 export const resume = {
   name: "Amogh Arya Munipalle",
-  title: "FDE Backend Developer | DevOps Engineer | Cloud Developer",
+  title: "Forward-Deployed Engineer · Edge AI · Cloud Systems",
   summary:
-    "Forward deployed engineer focused on building intelligent, cloud-native systems with customers in mind. I bridge client needs and technical teams to ship reliable solutions — from automated CI/CD pipelines and serverless platforms to AI-powered bots and customer retention tools. 2.5 years of experience delivering high-impact systems across cloud infrastructure, pipeline automation, and applied AI.",
+    "Forward-deployed engineer building reliable systems across edge AI, cloud infrastructure, and customer-facing delivery.",
   location: "West Lafayette, Indiana",
   contact: {
     email: "amogh.work@gmail.com",
@@ -22,33 +22,59 @@ export const resume = {
     border: "#E3E6EE"
   },
   navigation: [
-    { label: "Education", href: "#education" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
+    { label: "Thesis", href: "#thesis" },
+    { label: "Work", href: "#projects" },
     { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Achievements", href: "#achievements" },
-    { label: "Contact", href: "#contact" }
+    { label: "About", href: "#about" },
   ],
   hero: {
+    status: "Available for forward-deployed engineering",
+    eyebrow: "West Lafayette · Systems / AI / Cloud",
+    role: "I build systems that have to work outside the demo.",
+    description:
+      "Forward-deployed engineer working across edge AI, cloud infrastructure, and the last difficult mile between a prototype and a system people can trust.",
     tagline: "Forward deployed engineering for secure, customer-first systems.",
     ctaPrimary: {
-      label: "Connect on LinkedIn",
-      href: "https://www.linkedin.com/in/amogh-arya-b548b1203/"
+      label: "View the thesis system",
+      href: "#thesis"
     },
     ctaSecondary: {
-      label: "View GitHub",
-      href: "https://github.com/mogiiee"
+      label: "Talk to me",
+      href: "https://www.linkedin.com/in/amogh-arya-b548b1203/"
     },
     stats: [
-      { label: "Years Experience", value: "2.5+", icon: "⚡" },
-      { label: "Requests/Day Capacity", value: "100K+", icon: "🚀" },
-      { label: "Projects Shipped", value: "50+", icon: "📦" },
-      { label: "AI Precision", value: "90%+", icon: "🎯" },
-      { label: "GPA at Purdue", value: "3.89", icon: "🎓" },
-      { label: "AI Bots Built", value: "30+", icon: "🤖" }
+      { label: "Production requests / day", value: "100K+", icon: "01" },
+      { label: "Edge vision precision", value: "90%+", icon: "02" },
+      { label: "Release cycle reduction", value: "40%", icon: "03" },
+      { label: "Purdue graduate GPA", value: "3.89", icon: "04" }
     ]
+  },
+  thesis: {
+    eyebrow: "Flagship work · Purdue University · 2026",
+    status: "Thesis approved",
+    title: "A digital twin that listens, sees, and reasons at the edge.",
+    description:
+      "A real-time safety system combining thermal and RGB vision, acoustic event detection, spatial tracking, and a live digital twin on Raspberry Pi hardware.",
+    checkerNote:
+      "I also open-sourced the formatter I built along the way: 89 deterministic Purdue checks, accessibility review, and zero file storage.",
+    checkerUrl: "https://mogiiee.github.io/thesis-er/",
+    sourceUrl: "https://github.com/mogiiee/thesis-er",
+    metrics: [
+      { value: "90%+", label: "vision precision" },
+      { value: "93%", label: "audio accuracy" },
+      { value: "4", label: "fused signals" },
+      { value: "1", label: "edge system" }
+    ]
+  },
+  currentFocus: {
+    title: "Open to difficult, useful engineering work.",
+    description:
+      "Forward-deployed roles, edge systems, cloud platforms, and teams that value people who can move between the customer and the code."
+  },
+  contactPitch: {
+    title: "Bring me the problem that does not fit neatly in a job description.",
+    description:
+      "I am most useful where software meets a real environment: a customer, a field device, a deadline, or a system with consequences."
   },
   about: [
     "I operate at the intersection of client needs and technical delivery, translating business goals into intelligent, cloud-native systems. I build end-to-end automated pipelines — from CI/CD and infrastructure-as-code to AI-powered workflows — that let teams ship faster and retain customers at scale.",
@@ -244,8 +270,8 @@ export const resume = {
       school: "Purdue University",
       degree: "Master's in Computer and Information Technology",
       location: "West Lafayette, Indiana, USA",
-      dates: "Aug 2024 - Present",
-      details: "GPA: 3.89/4"
+      dates: "Aug 2024 - 2026",
+      details: "GPA: 3.89/4 · Master's thesis approved"
     },
     {
       school: "Vellore Institute of Technology",

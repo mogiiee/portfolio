@@ -10,9 +10,9 @@ interface SectionProps {
 
 export function Section({ id, title, eyebrow, description, children }: SectionProps) {
   return (
-    <section id={id} className="section">
+    <section id={id} className="section" data-section={id}>
       <div className="container">
-        <div className="section-header">
+        <div className="section-header" data-reveal>
           {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
           <h2>{title}</h2>
           {description ? <p className="section-description">{description}</p> : null}

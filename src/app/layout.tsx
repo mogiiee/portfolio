@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./redesign.css";
 import { resume } from "@/data/resume";
 import { fontVariables } from "@/lib/fonts";
 
@@ -14,14 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={fontVariables} suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}})();`,
-          }}
-        />
-      </head>
+    <html lang="en" className={fontVariables}>
       <body data-font={resume.theme.fontPreset}>
         {children}
       </body>

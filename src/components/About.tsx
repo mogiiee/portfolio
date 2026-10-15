@@ -2,17 +2,14 @@ import { resume } from "@/data/resume";
 
 export function About() {
   return (
-    <div className="about-grid">
+    <div className="about-grid" data-reveal>
       {resume.about.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}
-      <div className="about-card">
-        <p className="eyebrow">Currently</p>
-        <h3>Open to impactful engineering work</h3>
-        <p>
-          Interested in cloud platforms, CI/CD pipeline automation, AI-driven bots, and customer retention engineering.
-          Available for full-time roles, research collaborations, and consulting.
-        </p>
+      <div className="about-card" data-tilt>
+        <p className="eyebrow">Current signal</p>
+        <h3>{resume.currentFocus.title}</h3>
+        <p>{resume.currentFocus.description}</p>
       </div>
     </div>
   );

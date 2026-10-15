@@ -4,7 +4,7 @@ export function Education() {
   return (
     <div className="grid two-col">
       {resume.education.map((item) => (
-        <div key={item.school} className="card">
+        <div key={item.school} className="card education-card" data-tilt data-reveal>
           <h3>{item.degree}</h3>
           <p className="card-subtitle">{item.school}</p>
           <div className="card-meta">

@@ -2,9 +2,10 @@ import { resume } from "@/data/resume";
 
 export function Experience() {
   return (
-    <div className="stack">
-      {resume.experience.map((item) => (
-        <div key={`${item.company}-${item.role}`} className="card experience-card">
+    <div className="experience-track">
+      {resume.experience.map((item, index) => (
+        <article key={`${item.company}-${item.role}`} className="experience-card" data-reveal>
+          <span className="experience-number">0{index + 1}</span>
           <div className="card-header">
             <div>
               <h3>{item.role}</h3>
@@ -20,7 +21,7 @@ export function Experience() {
               <li key={highlight}>{highlight}</li>
             ))}
           </ul>
-        </div>
+        </article>
       ))}
     </div>
   );

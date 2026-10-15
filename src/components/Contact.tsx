@@ -2,13 +2,11 @@ import { resume } from "@/data/resume";
 
 export function Contact() {
   return (
-    <div className="contact-grid">
-      <div className="card contact-card">
-        <h3>Let’s build something secure and customer-first.</h3>
-        <p>
-          Open to client-facing engineering, forward deployed roles, and
-          secure cloud systems that bridge business and technical teams.
-        </p>
+    <div className="contact-grid" data-reveal>
+      <div className="contact-card">
+        <p className="eyebrow">Transmission open</p>
+        <h3>{resume.contactPitch.title}</h3>
+        <p>{resume.contactPitch.description}</p>
         <div className="contact-actions">
           <a className="button primary" href={resume.contact.linkedin}>
             Connect on LinkedIn
@@ -18,7 +16,7 @@ export function Contact() {
           </a>
         </div>
       </div>
-      <div className="card contact-details">
+      <div className="contact-details" data-tilt>
         <div>
           <p className="eyebrow">Location</p>
           <p>{resume.location}</p>

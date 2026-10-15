@@ -1,25 +1,22 @@
 import { resume } from "@/data/resume";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function Navbar() {
   return (
     <header className="nav">
       <div className="container nav-inner">
         <a className="nav-logo" href="#top">
-          {resume.name.split(" ")[0]}
-          <span className="nav-dot">.</span>
+          <span>AM</span>
+          <small>Systems engineer<br />West Lafayette</small>
         </a>
-        <nav className="nav-links">
+        <nav className="nav-links" aria-label="Primary navigation">
           {resume.navigation.map((item) => (
-            <a key={item.href} href={item.href}>
-              {item.label}
-            </a>
+            <a key={item.href} href={item.href}>{item.label}</a>
           ))}
         </nav>
         <div className="nav-actions">
-          <ThemeToggle />
-          <a className="nav-cta" href={resume.hero.ctaPrimary.href}>
-            {resume.hero.ctaPrimary.label}
+          <span className="nav-time">UTC−4</span>
+          <a className="nav-cta" href="#contact">
+            Start a conversation <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
